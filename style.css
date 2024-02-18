@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*::before, *::after, *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+body{
+     font-family: "Open sans", sans-serif;
+     line-height: 1.5;
+     background-color: #f1f5f9;
+     font-size: 0.875rem;
+}
+h2{
+    line-height: 1.25;
+    letter-spacing: 4px;
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.menu{
+     padding: 5rem 0;   
+}
+.title{
+     text-align: center;
+     margin-bottom: 2rem;
+}
+.underline{
+     background: gold;
+     width: 5rem;
+     height: 0.25rem;
+     margin: 0 auto;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.btn-container > *{
+     text-transform: capitalize;
+     font-size: 1rem;
+     letter-spacing: 1px;
+     padding: 0.375rem 0.75rem;
+     border: 2px solid gold;
+     margin: 0 0.25rem;
+     background-color: transparent;
+     border-radius: 0.5rem;
+     color: gold;
+     cursor: pointer;
+     box-shadow: 0 0 5px 0 rgb(218, 165, 32, 0.5);
+     transition: all 0.3s linear;
+}
+.btn-container > *:hover{
+     background-color: gold;
+     color: #fff;
+}
+.section-center{
+     width: 90vw;
+     margin: 0 auto;
+     max-width: 1170px;
+     display: grid;
+     gap: 3rem 2rem;
+     place-items: center;
+}
+.menu-items{
+      display: grid;
+      gap: 1rem 2rem;
+      max-width: 25rem;
+}
+.photo{
+    border: 0.25rem solid gold;
+    border-radius: 0.5rem;
+    height: 200px;
+    object-fit: cover;
+}
+.item-info header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.5px solid gold;
+}
+.item-info header h4{
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+.price{
+    color: gold;
+}
+.item-desc{
+     margin: 0;
+     padding-top: 1rem;
+     text-align: justify;
+}
+
+@media screen and (min-width: 768px){
+      .menu-items{
+           grid-template-columns: 225px 1fr;
+           gap: 0 1.25rem;
+           max-width: 40rem;
+      }
+      .photo{
+         height: 175px;
+      }
+}
+
+@media screen and (min-width: 1200px){
+     .section-center{
+           width: 95vw;
+           grid-template-columns: 1fr 1fr;
+     }   
+     .photo{
+         height: 150px;
+     }
+}
